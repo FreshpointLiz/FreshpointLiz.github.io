@@ -20,12 +20,19 @@
             border-radius: 10px;
             box-shadow: 0 16px 32px rgba(0,0,0,0.1);
             text-align: center;
-            max-width: 300px;
+            max-width: 900px;
+            width: 90%; /* Adjust width to be responsive */
+            margin: auto; /* Center the card */
         }
         h1 {
             margin-bottom: 5px;
+            font-size: 36px;
+            color: #D97B44;
+        }
+        h3 {
+            margin-bottom: 5px;
             font-size: 24px;
-            color: #D97B44
+            color: #D97B44;
         }
         h2 {
             margin-top: 0;
@@ -35,17 +42,51 @@
         p {
             margin: 5px 0;
             color: #D97B44;
+            font-size: 16px; /* Base font size */
         }
         a {
             text-decoration: none;
             color: #007BFF;
         }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 600px) {
+            .card {
+                width: 95%; /* Make card wider on smaller screens */
+                padding: 15px; /* Reduce padding for smaller screens */
+            }
+            h1 {
+                font-size: 20px; /* Smaller font size for smaller screens */
+            }
+            h2 {
+                font-size: 16px; /* Smaller font size for smaller screens */
+            }
+            p {
+                font-size: 14px; /* Smaller font size for smaller screens */
+            }
+        }
+
+        @media (max-width: 400px) {
+            .card {
+                width: 100%; /* Full width on very small screens */
+                padding: 10px; /* Further reduce padding */
+            }
+            h1 {
+                font-size: 18px; /* Even smaller font size */
+            }
+            h2 {
+                font-size: 14px; /* Even smaller font size */
+            }
+            p {
+                font-size: 12px; /* Even smaller font size */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>FreshPoint</h1>
-        <h2>Elizabeth Benton<p></p>Sales Consultant - Birmingham AL</h2>
+        <h1>Elizabeth Benton<br><h2>Sales Consultant - Birmingham AL</h2></h1>
+        <h3>FreshPoint</h3>
         <p>Phone: <a href="tel:470-376-7166">470-376-7166</a></p>
         <p>Email: <a href="mailto:Elizabeth.Benton@freshpoint.com">Elizabeth.Benton@freshpoint.com</a></p>
         <p>Address: <a href="https://www.google.com/maps/place/1200+Oakley+Industrial+Blvd,+Fairburn,+GA+30213" target="_blank">1200 Oakley Industrial Blvd., Suite B, Fairburn, GA 30213</a></p>
